@@ -1,6 +1,8 @@
 package com.abecerra.base
 
-interface PresenterConfigurator<PRESENTER> {
+import android.os.Parcelable
+
+interface PresenterConfigurator<PRESENTER>: Parcelable {
 
     fun getPresenter(): PRESENTER?
 }
