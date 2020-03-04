@@ -9,8 +9,8 @@ abstract class BasePresenterFragment<PRESENTER> : BaseFragment() {
 
     protected var presenter: PRESENTER? = null
 
-    fun newInstance(presenterConfigurator: PresenterConfigurator<PRESENTER>) {
-        this.presenterConfigurator = presenterConfigurator
+    fun injectPresenterConfigurator(presenteronfigurator: PresenterConfigurator<PRESENTER>) {
+        presenterConfigurator = presenteronfigurator
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
